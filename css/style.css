@@ -1,0 +1,61 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.body{
+    background: url("../bgg.jfif");
+    /* background-color: red; */
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 100px;
+    font-size: 39px;
+    font-weight: bold;
+}
+#hiscoreBox{
+    position: absolute;
+    top: 49px;
+    right: 38px;
+    font-size: 39px;
+    font-weight: bold;
+    
+
+}
+#board{
+    background: linear-gradient(rgb(134, 230, 171),rgb(224, 224, 133));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+
+}
+.head{
+    background: linear-gradient(red,yellow);
+    border: 2px solid plum;
+    transform: scale(1.02);
+    border-radius: 5px;
+
+}
+.snake{
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius:  12px;
+
+}
+.food{
+    background: linear-gradient(rgb(230, 126, 172),rgb(107, 107, 228));
+    /* background-color: blue; */
+    border: .25vmin solid black;
+    border-radius: 10px;
+}
